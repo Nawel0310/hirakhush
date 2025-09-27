@@ -17,8 +17,13 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files
+# env files - IMPORTANTE: Proteger configuración de producción
 .env*
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
 
 # vercel
 .vercel
@@ -62,9 +67,25 @@ build/
 ### VS Code ###
 .vscode/
 
+# Configuración específica de producción
 .env
 /nginx/logs/
 
-# NGINX / Certbot SSL
+# NGINX / Certbot SSL - Configuración de servidor específica
 nginx/certbot/
 nginx/logs/
+nginx/ssl/
+nginx/conf.d/*.conf
+
+# Docker específico de producción
+docker-compose.override.yml
+docker-compose.prod.yml
+
+# Archivos de configuración específicos del servidor
+frontend/lib/strapi.ts
+backend/config/production/
+backend/public/uploads/
+
+# Logs específicos del servidor
+*.log
+logs/

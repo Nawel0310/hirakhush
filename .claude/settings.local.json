@@ -3,7 +3,11 @@
     "allow": [
       "Bash(docker-compose:*)",
       "Read(//a/**)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(docker compose:*)",
+      "Bash(pkill:*)",
+      "Bash(docker system prune:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []

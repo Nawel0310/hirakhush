@@ -75,13 +75,13 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
       args:
-        NEXT_PUBLIC_STRAPI_URL: http://localhost
+        NEXT_PUBLIC_STRAPI_URL: ${NEXT_PUBLIC_STRAPI_URL}
     container_name: hirakhush-frontend
     environment:
       NODE_ENV: production
       NEXT_TELEMETRY_DISABLED: 1
-      NEXT_PUBLIC_STRAPI_URL: http://localhost
-      STRAPI_URL: http://backend:4000
+      NEXT_PUBLIC_STRAPI_URL: ${NEXT_PUBLIC_STRAPI_URL}
+      STRAPI_URL: ${STRAPI_URL}
     depends_on:
       - backend
     networks:
