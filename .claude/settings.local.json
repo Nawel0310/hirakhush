@@ -7,7 +7,18 @@
       "Bash(docker compose:*)",
       "Bash(pkill:*)",
       "Bash(docker system prune:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(apt:*)",
+      "Bash(certbot certonly:*)",
+      "Bash(nslookup:*)",
+      "Bash(netstat:*)",
+      "Bash(ss:*)",
+      "Read(//var/log/letsencrypt/**)",
+      "Bash(sysctl:*)",
+      "Bash(dig:*)",
+      "Bash(chmod:*)",
+      "Bash(crontab:*)",
+      "Bash(python3:*)"
     ],
     "deny": [],
     "ask": []
