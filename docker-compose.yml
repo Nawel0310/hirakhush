@@ -81,6 +81,7 @@ services:
       NODE_ENV: production
       NEXT_TELEMETRY_DISABLED: 1
       NEXT_PUBLIC_STRAPI_URL: ${NEXT_PUBLIC_STRAPI_URL}
+      NEXT_PUBLIC_STRAPI_API_URL: ${NEXT_PUBLIC_STRAPI_API_URL}
       STRAPI_URL: ${STRAPI_URL}
     depends_on:
       - backend
