@@ -18,7 +18,11 @@
       "Bash(dig:*)",
       "Bash(chmod:*)",
       "Bash(crontab:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(npm install:*)",
+      "Bash(docker logs:*)",
+      "Bash(docker ps:*)",
+      "Bash(docker exec:*)"
     ],
     "deny": [],
     "ask": []

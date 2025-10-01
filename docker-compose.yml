@@ -58,6 +58,15 @@ services:
       HOST: ${HOST}
       PORT: ${PORT}
       JWT_SECRET: ${JWT_SECRET}
+      # Email Configuration
+      EMAIL_PROVIDER: ${EMAIL_PROVIDER}
+      EMAIL_SMTP_HOST: ${EMAIL_SMTP_HOST}
+      EMAIL_SMTP_PORT: ${EMAIL_SMTP_PORT}
+      EMAIL_SMTP_USERNAME: ${EMAIL_SMTP_USERNAME}
+      EMAIL_SMTP_PASSWORD: ${EMAIL_SMTP_PASSWORD}
+      EMAIL_FROM: ${EMAIL_FROM}
+      CONTACT_EMAIL_FROM: ${CONTACT_EMAIL_FROM}
+      CONTACT_EMAIL_TO: ${CONTACT_EMAIL_TO}
     volumes:
       - ./backend/public/uploads:/opt/app/public/uploads
     depends_on:
